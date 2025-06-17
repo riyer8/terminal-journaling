@@ -4,7 +4,7 @@ Just a simple command line journaling app to write, organize, and search entries
 
 ## Features
 
-- Find timestammped journal entries through tags
+- Find timestamped journal entries through tags
 - Stores entries in JSONs
 - Search and delete past entries
 

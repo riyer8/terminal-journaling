@@ -13,6 +13,7 @@ def slugify(title: str, max_length: int = 50):
     final_slug = re.sub(r'-{2,}', '-', cleaned_slug).strip('-')
     return final_slug
 
+# creates a new journal entry
 def create_entry():
     title = input("Add a name for your journal entry: ").strip()
     while (title == ""):
@@ -33,6 +34,7 @@ def create_entry():
 
     save_entry(title, all_content, tags, formatted_datetime)
 
+# saves the journal entry in "entries/"
 def save_entry(title, content, tags, timestamp):
     filename = f"{timestamp}_{slugify(title)}.json"
     entry = {
@@ -50,4 +52,5 @@ def save_entry(title, content, tags, timestamp):
     
     print(f"\n Entry saved as {filename}")
 
-create_entry()
+# test example
+# create_entry()
