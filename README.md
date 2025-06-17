@@ -13,9 +13,9 @@ Just a simple command line journaling app to write, organize, and search entries
 ```bash
 python journal.py add
 python journal.py list
-python journal.py view --title "current ai"
-python journal.py search --tag learning
-python journal.py delete --title "current ai"
+python journal.py view
+python journal.py search
+python journal.py delete
 ```
 
 ## Things I Would Improve
